@@ -24,4 +24,6 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
-server.listen(3000);
+const port = process.env.PORT || 8080;
+
+server.listen(port);
